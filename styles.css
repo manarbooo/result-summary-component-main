@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --Light_red : hsl(0, 100%, 67%);
+    --Orangey_yellow : hsl(39, 100%, 56%);
+    --Green_teal : hsl(166, 100%, 37%);
+    --Cobalt_blue : hsl(234, 85%, 45%);
+    --Light_royal_blue : hsl(241, 81%, 54%);
+    --Violet_blue : hsla(256, 72%, 46%, 1);
+    --Persian_blue : hsla(241, 72%, 46%, 0);
+    --White : hsl(0, 0%, 100%);
+    --Pale_blue : hsl(221, 100%, 96%);
+    --Light_lavender: hsl(241, 100%, 89%);
+    --Dark_gray_blue: hsl(224, 30%, 27%);
+    --Light_slate_blue: hsl(252, 100%, 67%);
+    --Light_red_opa : hsla(0, 100%, 67%, 0.2);
+    --Orangey_yellow_opa : hsla(39, 100%, 56%, 0.2);
+    --Green_teal_opa : hsla(166, 100%, 37%, 0.2);
+    --Cobalt_blue_opa : hsla(234, 85%, 45%, 0.2);
+}
+
+
+body{
+    font-family: "Hanken Grotek", sans-serif;
+    font-size: 18px;
+    background-color: var(--White);
+    
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    max-width: 540px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 25px;
+    margin-top: 100px;
+    box-shadow: 15px 15px 80px -25px rgba(46, 28, 135, 0.3);
+}
+
+.result{
+    background : linear-gradient(180deg, hsl(252, 100%, 67%)0%, hsl(241, 81%, 54%)100%);
+    width: 260px;
+    height: 380px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.summary{
+    background-color: var(--White);
+    width: 260px;
+    height: 380px;
+    border-radius: 0px 25px 25px 0px;
+}
+
+.summaryTitle{
+    margin-left: 30px;
+    margin-top: 30px;
+    color: var(--Dark_gray_blue);
+    font-weight: 700;
+}
+
+.resultTitle{
+  margin-top: 30px;
+  font-weight: 550;
+  color: var(--Light_lavender);
+}
+
+.summary > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 12%;
+    margin-bottom: 10px;
+    margin-left: 13px;
+    border-radius: 10px;
+    font-size: 16px;
+   
+}
+
+.reaction{
+  background-color: hsla(0, 100%, 67%, 0.08);
+  color: var(--Light_red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.memory{
+  background-color:  hsla(39, 100%, 56%, 0.08);
+  color: var(--Orangey_yellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.verbal{
+  background-color: hsla(166, 100%, 37%, 0.08);
+  color: var(--Green_teal);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visual{
+  background-color: hsla(234, 85%, 45%, 0.08);
+  color: var(--Cobalt_blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.cardTitle i {
+   margin-left: 10px;
+    margin-right: 10px; 
+}
+
+.cardTitle p {
+    margin: 0; 
+}
+
+.cardTitle img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+
+
+.cardScore {
+  display: flex;
+  align-items: center;
+  font-weight: 550;
+}
+
+.cardScore p {
+  margin: 0;
+}
+
+.cardScore p span {
+  margin-right: 10px;
+  opacity: .4; 
+}
+
+.cardScore p{
+  color: var(--Dark_gray_blue);
+}
+
+.summaryButton{
+  color: var(--White);
+  background-color: var(--Dark_gray_blue);
+  margin-left: 15px;
+  padding-left: 85px ;
+  padding-right: 85px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 25px;
+  font-weight: 550;
+  margin-top: 10px;
+}
+.summaryButton:hover{
+  border: 2px solid var(--Light_royal_blue);
+  background : linear-gradient(180deg, hsl(252, 100%, 67%)0%, hsl(241, 81%, 54%)100%);
+}
+
+.resultValue{
+  color: var(--White);
+  font-size: 3rem;
+  margin-top: -0.5px;
+}
+
+.resultCircle span{
+  font-size: 0.8rem;
+  color: var(--Light_lavender);
+  opacity: .6;
+  margin-top: -25px;
+  
+}
+
+.resultNote{
+  color: var(--White);
+}
+
+.resultPara{
+  color: var(--Light_lavender);
+  font-size: 0.8rem;
+ margin-top: -10px;
+  text-align: center;
+}
+
+.resultCircle{
+  width: 150px;
+  height: 150px;
+  margin-top: 1rem;
+  border-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, hsl(246, 86%, 57%) 0%, hsl(255, 71%, 46%) 100%);
+}
